@@ -1,0 +1,22 @@
+
+.cu-form-group .title {
+	min-width: calc(4em + 15px);
+}
+.switch-unit::after {
+	content: "\e645";
+}
+.switch-unit::before {
+	content: "\e646";
+}
+.e-btn{margin-bottom: 1rem;}
+.titlePad{margin-top:0.6rem;}
+.cu-list>.move-cur{
+	-webkit-transform: translateX(-150rpx);
+	        transform: translateX(-150rpx);
+}
+.nav .cu-item.cur {
+	position: flex;
+	z-index: 9;
+	border-bottom: 4rpx solid;
+}
+

@@ -1,0 +1,17 @@
+
+.cu-form-group uni-picker.data-v-6a7ae53e::after {
+	font-family: cuIcon;
+	display: block;
+	content: "\e6a3";
+	position: absolute;
+	font-size: 14px;
+	color: #FFFFFF;
+	line-height: 42px;
+	width: 25px;
+	text-align: left;
+	top: 0;
+	bottom: 0;
+	right: -8px;
+	margin: auto;
+}
+

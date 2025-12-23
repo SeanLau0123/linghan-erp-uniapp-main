@@ -1,0 +1,13 @@
+{
+  "enablePullDownRefresh": false,
+  "navigationBarTitleText": "retailOut",
+  "usingComponents": {
+    "uni-popup": "/components/uni-popup/uni-popup",
+    "uni-icons": "/uni_modules/uni-icons/components/uni-icons/uni-icons",
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni",
+    "uni-fab": "/uni_modules/uni-fab/components/uni-fab/uni-fab",
+    "app-select": "/components/my-componets/appSelect",
+    "tki-tree": "/components/tki-tree/tki-tree",
+    "my-date": "/components/my-componets/my-date"
+  }
+}

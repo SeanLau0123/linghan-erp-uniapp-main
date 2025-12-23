@@ -1,0 +1,23 @@
+
+.cu-list.grid>.cu-item.data-v-92bb8f34 {
+	  padding: 0px 0px;
+}
+.line2-icon.data-v-92bb8f34 {
+	  width: 60px;
+	  height: 60px;
+}
+.charts-container.data-v-92bb8f34 {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: space-between;
+}
+.chart-item.data-v-92bb8f34 {
+	  width: 100%;
+	  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+.chart-item.data-v-92bb8f34 {
+	    width: 48%;
+}
+}
+

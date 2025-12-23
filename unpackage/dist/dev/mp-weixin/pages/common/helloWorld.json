@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "uni-calendar": "/components/uni-calendar/uni-calendar",
+    "app-select": "/components/my-componets/appSelect",
+    "my-image-upload": "/components/my-componets/my-image-upload",
+    "my-date": "/components/my-componets/my-date"
+  }
+}

@@ -1,0 +1,462 @@
+{
+	"pages": [
+		/*报表*/
+		{
+			"path": "pages/report/report",
+			"style": {}
+		},
+		{
+			"path": "pages/report/material_stock",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "material_stock"
+			}
+		},
+		{
+			"path": "pages/report/buyin",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "buyin"
+			}
+		},
+		// 基础资料
+		{
+			"path": "pages/material/material",
+			"style": {}
+		},
+		{
+			"path": "pages/material/goods/goods",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "goods"
+			}
+		},
+		{
+			"path": "pages/material/goods/goodsInfo",
+			"style": {
+				"navigationBarTitleText": "goodsInfo"
+			}
+		},
+		{
+			"path": "pages/material/depot",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "depot"
+			}
+		},
+		{
+			"path" : "pages/material/categorys",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path": "pages/material/vendors/vendors",
+			"style": {
+				"navigationBarTitleText": "vendors"
+			}
+		},
+		{
+			"path": "pages/material/vendors/vendorsInfo",
+			"style": {
+				"navigationBarTitleText": "vendorsInfo"
+			}
+		},
+		{
+			"path": "pages/material/accounts",
+			"style": {
+				"navigationBarTitleText": "accounts"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {}
+		},
+		{
+			"path": "pages/basics/layout",
+			"style": {}
+		},
+		{
+			"path": "pages/basics/background",
+			"style": {}
+		},
+		{
+			"path": "pages/basics/text",
+			"style": {}
+		},
+		{
+			"path": "pages/basics/icon",
+			"style": {}
+		},
+		{
+			"path": "pages/basics/button",
+			"style": {}
+		},
+		{
+			"path": "pages/basics/design",
+			"style": {}
+		},
+		{
+			"path": "pages/basics/tag",
+			"style": {}
+		},
+		{
+			"path": "pages/basics/avatar",
+			"style": {}
+		},
+		{
+			"path": "pages/basics/progress",
+			"style": {}
+		},
+		{
+			"path": "pages/basics/shadow",
+			"style": {}
+		},
+		{
+			"path": "pages/basics/loading",
+			"style": {}
+		},
+		{
+			"path": "pages/component/bar",
+			"style": {}
+		},
+		{
+			"path": "pages/component/nav",
+			"style": {}
+		},
+		{
+			"path": "pages/component/list",
+			"style": {}
+		},
+		{
+			"path": "pages/component/card",
+			"style": {}
+		},
+		{
+			"path": "pages/component/form",
+			"style": {}
+		},
+		{
+			"path": "pages/component/timeline",
+			"style": {}
+		},
+		{
+			"path": "pages/component/chat",
+			"style": {}
+		},
+		{
+			"path": "pages/component/swiper",
+			"style": {}
+		},
+		{
+			"path": "pages/component/modal",
+			"style": {}
+		},
+		{
+			"path": "pages/component/steps",
+			"style": {}
+		},
+		{
+			"path": "pages/plugin/indexes",
+			"style": {}
+		},
+		{
+			"path": "pages/plugin/animation",
+			"style": {}
+		},
+		{
+			"path": "pages/plugin/drawer",
+			"style": {}
+		},
+		{
+			"path": "pages/plugin/verticalnav",
+			"style": {}
+		},
+		{
+			"path": "pages/home/home",
+			"style": {}
+		},
+		{
+			"path": "pages/openorder/openorder",
+			"style": {}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {}
+		},
+		{
+			"path": "pages/user/userexit",
+			"style": {}
+		},
+		{
+			"path": "pages/user/userdetail",
+			"style": {}
+		},
+		{
+			"path": "pages/user/useredit",
+			"style": {}
+		},
+		{
+			"path": "pages/user/people",
+			"style": {}
+		},
+		{
+			"path": "pages/common/exit",
+			"style": {}
+		},
+		{
+			"path": "pages/user/userpwedit",
+			"style": {}
+		},
+		{
+			"path": "pages/common/success",
+			"style": {}
+		},
+		{
+			"path": "pages/addressbook/address-book",
+			"style": {}
+		},
+		{
+			"path": "pages/addressbook/level-address-book",
+			"style": {}
+		},
+		{
+			"path": "pages/addressbook/member",
+			"style": {}
+		},
+		{
+			"path": "pages/addressbook/address-detail",
+			"style": {}
+		},
+		{
+			"path": "pages/annotation/annotationList",
+			"style": {
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/annotation/annotationDetail",
+			"style": {}
+		},
+		{
+			"path": "pages/common/helloWorld",
+			"style": {}
+		},
+		{
+			"path": "pages/openorder/retailOut/retailOut",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "retailOut"
+			}
+		},
+		{
+			"path": "pages/openorder/retailOut/retailOutModel",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "retailOutModel"
+			}
+		},
+		{
+			"path": "pages/openorder/retailOut/goodsSelect",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "goodsSelect"
+			}
+		},
+		{
+			"path": "App",
+			"style": {}
+		},
+		{
+			"path" : "pages/material/customers",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/report/account",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/report/outmaterialcount",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/report/inmaterialcount",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/report/saleout",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/report/inoutstockreport",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/material/members",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/report/indetail",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/report/outdetail",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/report/retailout",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/report/allocationdetail",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/report/vendoraccount",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/report/customeraccount",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/report/stockwarningreport",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/material/person",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/material/inOutItemList",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/material/multiAttribute",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/material/unites",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/material/log",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/material/role/role",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path" : "pages/material/user/user",
+			"style" : 
+			{
+				"navigationBarTitleText" : "user"
+			}
+		},
+		{
+			"path" : "pages/user/about",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		},
+		{
+			"path": "common/util/zlUpdate/zlUpdate",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+					"animationType": "fade-in", //动画效果
+					"background": "transparent", //背景透明
+					"backgroundColor": "rgba(0,0,0,0)", //背景透明
+					"popGesture": "none" //禁止苹果侧滑返回 
+				},
+				"disableScroll": true
+			}
+		}
+	],
+	"globalStyle": {
+		"mp-alipay": {
+			/* 支付宝小程序特有相关 */
+			"transparentTitle": "always",
+			"allowsBounceVertical": "NO"
+		},
+		"navigationBarBackgroundColor": "#0081ff",
+		"navigationBarTitleText": "玲涵ERP",
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "white"
+	},
+	"usingComponts": true,
+	"condition": {
+		//模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "表单", //模式名称
+			"path": "pages/index/index", //启动页面
+			"query": "" //启动参数
+		}]
+	}
+}

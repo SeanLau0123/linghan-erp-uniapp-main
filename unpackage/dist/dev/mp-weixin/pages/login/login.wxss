@@ -1,0 +1,34 @@
+
+.login-paddingtop {
+	padding-top: 100rpx;
+}
+.zai-box {
+	padding: 0 20rpx;
+	padding-top: 100rpx;
+	position: relative;
+}
+.zai-logo {
+	width: 200rpx;
+	height: 150rpx;
+}
+.zai-title {
+	font-size: 58rpx;
+	color: #aa5500;
+	text-align: center;
+}
+.input-placeholder,
+.zai-input {
+	color: #94afce;
+}
+.zai-label {
+	padding: 60rpx 0;
+	text-align: center;
+	font-size: 30rpx;
+	color: #0000ff;
+}
+.zai-randomImage {
+	width: 85px;
+	height: 30px;
+	background: #94afce;
+}
+

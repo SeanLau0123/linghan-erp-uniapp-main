@@ -34,16 +34,12 @@
 								<myDate v-model="endTime" fields="day" placeholder="请选择日期"></myDate>
 							</view>
 							<view class="cu-form-group">
-						<view class="title">调出仓库</view>
-						<app-select v-model="depotId" placeholder="请选择" :dict="depotList" space></app-select>
-					</view>
-					<view class="cu-form-group">
-						<view class="title">调入仓库</view>
-						<app-select v-model="depotIdF" placeholder="请选择" :dict="depotList" space></app-select>
-					</view>
+								<view class="title">调出仓库</view>
+								<app-select v-model="depotIdF" placeholder="请选择" :dict="depotList" space></app-select>
+							</view>
 							<view class="cu-form-group">
-								<view class="title">机构</view>
-								<app-select v-model="organizationId" placeholder="请选择" :dict="organizationList" space></app-select>
+								<view class="title">调入仓库</view>
+								<app-select v-model="depotId" placeholder="请选择" :dict="depotList" space></app-select>
 							</view>
 							<view class="cu-form-group">
 								<view class="title">商品类别</view>
@@ -65,8 +61,8 @@
 								<button class="cu-btn bg-gradual-blue shadow-blur round" @tap="confirm">确定</button>
 							</view>
 						</form>
-				</view>
-			</uni-popup>
+					</view>
+				</uni-popup>
 			</view>
 			<view class="stock-list" :style="[{animation: 'show 0.5s 1'}]">
 				<view class="stock-item" v-for="item in outCount" :key="item.barCode">
@@ -153,7 +149,6 @@
 		onLoad() {
 			this.loadinfo()
 			this.getDepotData() //加载仓库列表
-			this.getOrganizationData() //加载机构列表
 			this.loadCategoryIdTreeData()
 		},
 		methods: {
@@ -182,8 +177,8 @@
 				this.categoryId = ''
 				this.categoryName = ''
 				this.searchText = ''
-				this.remark=''
-				this.number=''
+				this.remark = ''
+				this.number = ''
 				this.endTime = new Date().toISOString().split('T')[0]
 				this.beginTime = threeMonthsAgo.toISOString().split('T')[0]
 				this.loadinfo()
@@ -250,25 +245,6 @@
 					this.mescroll.endErr();
 				})
 			},
-			getOrganizationData() {
-				let that = this
-				this.$http.post("/organization/findBySelect", {
-				}).then(res => {
-					if (res && res.statusCode === 200) {
-						let v;
-						for (let annItem of res.data) {
-							let row = {};
-							row.text = annItem.organizationName;
-							row.value = annItem.id + ""
-							that.organizationList.push(row)
-							if (annItem.enabled) {
-								v = row.value
-							}
-						}
-						that.organizationId = v
-					}
-				})
-			},
 			getDepotData() {
 				let that = this
 				this.$http.get("/depot/findDepotByCurrentUser", {}).then(res => {
@@ -300,9 +276,6 @@
 				}
 				if (this.searchText) {
 					params.materialParam = this.searchText
-				}
-				if (this.organizationId) {
-					params.organizationId = this.organizationId
 				}
 				if (this.depotId) {
 					params.depotId = this.depotId
@@ -418,14 +391,16 @@
 		min-width: calc(30% - 85px);
 		word-break: break-all;
 	}
+
 	.name {
 		font-weight: bold;
 		color: #007aff;
-	}	
-	.cu-form-group
-	{
+	}
+
+	.cu-form-group {
 		text-align: center;
 	}
+
 	.title {
 		width: 80px;
 		text-align: right;

@@ -371,7 +371,7 @@
 
 	.label {
 		color: #666;
-		width: 100px;
+		width: 90px;
 		text-align: right;
 	}
 

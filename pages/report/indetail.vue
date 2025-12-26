@@ -18,12 +18,12 @@
 					<text
 						style="text-align:center; font-weight: bold">总数量：{{operNumberTotal}}，总金额：¥{{allPriceTotal.toFixed(2)}}</text>
 				</view>
-				<uni-popup ref="popup" style="z-index: 20; margin: 0 auto;height:800px;" type="right">
+				<uni-popup ref="popup" style="z-index: 20; margin: 0 auto;height: 800px;" type="right">
 					<view style="height: 800px; width: 100%;float: right;">
 						<form style="height: 800px;">
 							<view class="cu-form-group" style="margin-top:60px;">
 								<view class="title">单据编号</view>
-								<input placeholder="	请输入单据编号" v-model="number" name="input"></input>
+								<input placeholder="请输入单据编号" v-model="number" name="input"></input>
 							</view>
 							<view class="cu-form-group">
 								<view class="title">开始日期</view>
@@ -171,8 +171,8 @@
 				this.categoryId = ''
 				this.categoryName = ''
 				this.searchText = ''
-				this.remark=''
-				this.number=''
+				this.remark = ''
+				this.number = ''
 				this.endTime = new Date().toISOString().split('T')[0]
 				this.beginTime = threeMonthsAgo.toISOString().split('T')[0]
 				this.loadinfo()
@@ -241,8 +241,7 @@
 			},
 			getSupplierData() {
 				let that = this
-				this.$http.post("/supplier/findBySelect_organ", {
-				}).then(res => {
+				this.$http.post("/supplier/findBySelect_organ", {}).then(res => {
 					if (res && res.statusCode === 200) {
 						let v;
 						for (let annItem of res.data) {
@@ -407,5 +406,13 @@
 	.name {
 		font-weight: bold;
 		color: #007aff;
+	}
+	.cu-form-group
+	{
+		text-align: center;
+	}
+	.title {
+		width: 80px;
+		text-align: right;
 	}
 </style>

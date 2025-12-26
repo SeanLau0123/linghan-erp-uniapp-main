@@ -28,7 +28,7 @@
 								<myDate v-model="endTime" fields="day" placeholder="请选择日期"></myDate>
 							</view>
 							<view class="cu-form-group">
-								<view class="title">供应商</view>
+								<view class="title">会员卡号</view>
 								<app-select v-model="supplierId" placeholder="请选择" :dict="supplierList" space></app-select>
 							</view>
 							<view class="cu-form-group">
@@ -37,8 +37,8 @@
 							</view>
 							<view class="cu-form-group">
 								<view class="title">商品类别</view>
-								<input disabled="true" placeholder="	请输入类别" name="input" v-model="categoryName"></input>
-								<input hidden="true" placeholder="	请输入类别" name="input" v-model="categoryId"></input>
+								<input disabled="true" placeholder="	请选择类别" name="input" v-model="categoryName"></input>
+								<input hidden="true" placeholder="	请选择类别" name="input" v-model="categoryId"></input>
 								<tki-tree ref="tkitree" :selectParent="selectParent" :multiple="multiple"
 									:range="categoryId_type" :foldAll="flod" rangeKey="name" @confirm="treeConfirm"
 									@cancel="treeCancel"></tki-tree>

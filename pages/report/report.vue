@@ -40,6 +40,7 @@
 		name: 'report',
 		props: {
 			cur: String,
+			default: 'report'
 		},
 		watch: {
 			cur: {

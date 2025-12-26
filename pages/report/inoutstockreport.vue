@@ -1,6 +1,6 @@
 <!-- 报表-进销存统计 -->
 <template>
-	<view> <cu-custom :bgColor="NavBarColor" :isBack="true" backRouterName="index" pageCur="report">
+	<view> <cu-custom :bgColor="NavBarColor" :isBack="true" backRouterName="index" pageCur="report" @click="goBack">
 			<block slot="backText">返回</block>
 			<block slot="content">进销存统计</block>
 		</cu-custom>
@@ -117,11 +117,14 @@
 			goBack() {
 				uni.navigateBack({
 					delta: 1,
-					success: function() {
+					success: () => {
 						const pages = getCurrentPages();
-						const prevPage = pages[pages.length - 2];
-						if (prevPage.route === 'pages/index/index') {
-							prevPage.$vm.PageCur = 'report';
+						const prevPage = pages[pages.length - 2]; // 获取index页面实例
+						if (prevPage && prevPage.route === 'pages/index/index') {
+							// 直接修改前页data中的PageCur
+							prevPage.data.PageCur = 'report';
+							// 强制前页更新视图
+							prevPage.$apply();
 						}
 					}
 				});
@@ -331,15 +334,13 @@
 
 	.stock-info {
 		font-weight: bold;
-		margin-left: 15rpx;
+		margin-left: 12rpx;
 	}
 
 	.item-row {
 		display: flex;
 		margin-bottom: 5px;
-		font-size: 12px;
 		line-height: 1.2;
-		flex-wrap: wrap;
 	}
 
 	.label {
@@ -358,5 +359,6 @@
 	.name {
 		font-weight: bold;
 		color: #007aff;
+		padding-right: 20px;
 	}
 </style>

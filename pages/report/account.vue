@@ -1,4 +1,4 @@
-<!-- 报表-商品库存 -->
+<!-- 报表-账户统计 -->
 <template>
 	<view>
 		<cu-custom :bgColor="NavBarColor" :isBack="true" @back="goBack">
@@ -13,7 +13,7 @@
 					<uni-icons type="search" @tap="openAccountSearch" size="25" style='margin-right: 5px;'></uni-icons>
 				</view>
 				<uni-popup ref="popup" style="z-index: 20; margin: 0 auto;height: 800px;" type="right">
-					<view style="height: 800px; width: 800px%;float: right;">
+					<view style="height: 800px; width: 200px;float: right;">
 						<form style="height: 800px;">
 							<view class="cu-form-group" style="margin-top:60px;">
 								<view class="title">账户名称</view>

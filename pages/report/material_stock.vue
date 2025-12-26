@@ -53,13 +53,15 @@
 					</view>
 					<view class="item-row">
 						<text class="label">单位：</text>
-						<text class="value">{{ stock.unit || '-' }}</text>
-						<text class="label">成本价：</text>
-						<text class="value">{{ stock.purchaseDecimal.toFixed(2) || '-' }}</text>
+						<text class="value">{{ stock.unitName || '-' }}</text>
+						<text class="label">类别：</text>
+						<text class="value">{{ stock.categoryName || '-' }}</text>
 					</view>
 					<view class="item-row">
 						<text class="label">初始库存：</text>
 						<text class="value">{{ stock.initialStock || '0' }}</text>
+						<text class="label">成本价：</text>
+						<text class="value">{{ stock.purchaseDecimal.toFixed(2) || '-' }}</text>
 					</view>
 					<view class="item-row">
 						<text class="label">库存：</text>
@@ -340,5 +342,6 @@
 	.name {
 		font-weight: bold;
 		color: #007aff;
+		padding-right: 20px;
 	}
 </style>
